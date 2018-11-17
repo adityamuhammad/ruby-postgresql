@@ -127,7 +127,7 @@ while run do
     print "choose id u want to update : "
     data[:id] = gets.chomp
     rs = e.find(data[:id])
-    unless rs.nil?
+    if rs.nil?
       puts "No records with that id"
     else
       print "name : "
